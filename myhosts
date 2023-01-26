@@ -7,8 +7,8 @@
 172.31.01.13
 
 [mywebserver:var]
-myjavajdk8onubuntu= openjdk-8-jdk
-myjavajdk8onredhat= java-1.8.0-openjdk 
+javajdk8onubuntu=openjdk-8-jdk
+javajdk8onredhat=java-1.8.0-openjdk 
 
 
 
