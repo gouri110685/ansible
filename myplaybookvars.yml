@@ -8,4 +8,14 @@
   tasks:
       - name: i want to display variable value
         debug:
-          msg: "{{myvar1}}" 
+          msg: "{{myvar1}}"
+
+      - name: i want to install tree 
+        apt:
+             name: "{{item}}"
+             state: present 
+        when: ansible_os_family=="Debian"
+        loop:
+             - "{{myvar1}}"
+             - "{{myvar2}}"
+             - "{{myvar3}}"
