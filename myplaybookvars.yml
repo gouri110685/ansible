@@ -11,10 +11,10 @@
           msg: "{{myvar1}}"
       - name: i want to install tree 
         apt:
-             name: "{{item}}"
-             state: present 
+            name: "{{item}}"
+            state: present 
         when: ansible_os_family=="Debian"
         loop:
-              "{{myvar1}}"
-              "{{myvar2}}"
-              "{{myvar3}}"
+              - "{{myvar1}}"
+              - "{{myvar2}}"
+              - "{{myvar3}}"
