@@ -2,10 +2,10 @@
 - hosts: 172.31.26.71
   become:
   vars: 
-   myvar1: tree
-   myvar2: git
-   myvar3: wget
-   tasks:
+     myvar1: tree
+     myvar2: git
+     myvar3: wget
+  tasks:
       - name: i want to display variable value
         debug:
           msg: "{{myvar1}}" 
