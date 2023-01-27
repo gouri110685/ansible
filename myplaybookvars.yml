@@ -9,7 +9,7 @@
       - name: i want to display variable value
         debug: 
           msg: "{{myvar1}}"
-      - name: i want to install tree 
+      - name: i want to install pakeges
         apt:
             name: "{{item}}"
             state: present 
