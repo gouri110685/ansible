@@ -1,5 +1,10 @@
+[mywebserver]
 172.31.26.71
 172.31.16.42
+
+[mywebserver:vars]
+myjavajdk8onubuntu=openjdk-8-jdk
+myjavajdk8onredhat=java-1.8.0-openjdk
 
 
 
