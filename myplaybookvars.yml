@@ -6,10 +6,6 @@
      myvar2: git
      myvar3: wget
   tasks:
-      - name: i want to display variable value
-        debug:
-          msg: "{{myvar1}}"
-
       - name: i want to install tree 
         apt:
              name: "{{item}}"
