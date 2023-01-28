@@ -1,8 +1,5 @@
 --- 
-- hosts: 172.31.29.176
-  become: yes
-  tasks: 
-      - name: i want create a file 
-        file:
-          path: /home/ubuntu/myfilehandle
-          state: touch
+  - name: i want create a file 
+    file:
+        path: /home/ubuntu/myfilehandle1
+        state: touch
