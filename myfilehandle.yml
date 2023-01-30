@@ -8,6 +8,7 @@
         apt:
           name: apache2
           state: present
+        notify: restartwebserver
 
       - name: i want to change the template
         template: 
