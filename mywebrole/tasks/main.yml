@@ -4,11 +4,4 @@
   apt:
      name: apache2
      state: present
-  notify: restartwebserver
-  
-- name: i want change template
-  template:
-    src: template/index.j2
-    dest: /var/www/html/index.html
-  notify: restartwebserver
-  
+ 
